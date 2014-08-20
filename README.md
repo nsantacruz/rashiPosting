@@ -2,9 +2,9 @@ rashiPosting
 ============
 
 takes parsed rashi and tosafos commentary on gemara and posts it to the corresponding lines of gemara on sefaria.org
-- currently matches ~80% or commentary precisely. 
+- currently matches ~80% of commentary precisely. 
 - ~15% of commentaries match multiple lines and are considered ambiguous. These are logged and need to be reviewed by a human
-- ~5% are not matched at all due to incongruencies in the text.
+- ~5% are not matched at all due to incongruencies in the text. These are also logged for review.
 #problems encountered:
 
 
