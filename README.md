@@ -2,12 +2,15 @@ rashiPosting
 ============
 
 takes parsed rashi and tosafos commentary on gemara and posts it to the corresponding lines of gemara on sefaria.org
+- currently matches ~80% or commentary precisely. 
+- ~15% of commentaries match multiple lines and are considered ambiguous. These are logged and need to be reviewed by a human
+- ~5% are not matched at all due to incongruencies in the text.
 #problems encountered:
 
 
-1. rashis aren't necessarily in the exact order of the gemara
+1. rashis aren't necessarily in the exact order of the gemara. you can't rely on a simple linear search to match phrase that would otherwise match multiple lines of gemara.
 
-2. rashi's version of the gemara often doesn't exactly match the gemara we have
+2. rashi's version of the gemara often doesn't exactly match the gemara we have. also, there is no definitive spelling for Aramaic. vavs and yuds can be added or subtracted to words to add vowelization.
 
 3. either rashi or the gemara will use an abbreviation, while the other won't
 
