@@ -33,3 +33,10 @@ takes parsed rashi and tosafos commentary on gemara and posts it to the correspo
 3. modify the text before any checking is done
   - get rid of unwanted words
   - convert abbreviations to full words
+
+#log files
+
+- logFileAmbiguous: if after searching (as outlined above) it finds multiple matches in the gemara for a single rashi, don't post it and log it in this file. For each rashi, it logs its daf, the possible lines where it could have been, the dibur hamaschil and the text of the rashi itself. A human can then come later and easily match it up himself.
+- logFileNotFound: if after searching (as outlined above) it doesn't find a match, it logs the dibur hamachil, text, and daf of the rashi in question.
+- NOTE1: The first mesechta wasn't labeled in the log, but it belongs to Mesechet Megillah
+- NOTE2: If the program couldn't find a rashi, it was more likely to mess up later in that daf because it has less context. also, it was more likely to not find a match for tosafot since the dhm is generally shorter than rashi's
